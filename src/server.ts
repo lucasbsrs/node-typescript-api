@@ -22,7 +22,7 @@ export class SetupServer extends Server {
     this.app.use(bodyParser.json());
   }
 
-  private setupControllers():void {
+  private setupControllers(): void {
     const forecastController = new ForecastController();
     this.addControllers([forecastController]);
   }
